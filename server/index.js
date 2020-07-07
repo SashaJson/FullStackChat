@@ -3,6 +3,7 @@
 const consola = require('consola');
 const {Nuxt, Builder} = require('nuxt');
 const {app, server} = require('./app');
+//const cors = require('cors');
 
 let config = require('../nuxt.config.js');
 config.dev = !(process.env.NODE_ENV === 'production');
@@ -20,6 +21,7 @@ async function start() {
   }
 
   app.use(nuxt.render);
+  //app.use(cors());
 
   server.listen(port, () => {
     consola.ready({
