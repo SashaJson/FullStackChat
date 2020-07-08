@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     message() {
-      this.$socket.emit('createMessage', {
+      this.$socket.client.emit('createMessage', {
         text: 'FROM CLIENT'
       })
     }
