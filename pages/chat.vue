@@ -1,12 +1,16 @@
 <template>
-  <h1>Chat Page {{user.name}}</h1>
+  <div>
+    <ul>
+      <li v-for="m in message" :key="m.text">{{m.text}}</li>
+    </ul>
+  </div>
 </template>
 
 <script>
   import {mapState} from 'vuex';
   export default {
     middleware: ['chat'],
-    computed: mapState(['user']),
+    computed: mapState(['user', 'message']),
     head() {
       return {
         title: `Room ${this.user.room}`

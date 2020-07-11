@@ -1,10 +1,15 @@
 export const state = () => ({
-  user: {}
+  user: {},
+  message: []
 });
 
 export const mutations = {
   setUser(state, user) {
     state.user = user
+  },
+  clearDate(state) {
+    state.user = {}
+    state.message = []
   }
 }
 
