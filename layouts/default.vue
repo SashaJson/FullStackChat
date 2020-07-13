@@ -3,8 +3,8 @@
     <v-navigation-drawer app v-model="drawer">
       <v-card max-width="800">
         <v-toolbar color="dark" dark>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
-          <v-toolbar-title>New Chat</v-toolbar-title>
+<!--          <v-app-bar-nav-icon></v-app-bar-nav-icon>-->
+          <v-toolbar-title class="title">New Chat</v-toolbar-title>
           <v-spacer></v-spacer>
         </v-toolbar>
         <v-list subheader>
@@ -32,7 +32,7 @@
     <v-app-bar app color="dark" dense=true dark :collapse-on-scroll=true :hide-on-scroll=true>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-btn icon @click="exit" color="dark" dark>
-        <v-icon dark left>mdi-arrow-left</v-icon>
+        <v-icon dark>mdi-arrow-left</v-icon>
       </v-btn>
       <v-toolbar-title>Chat room {{user.room}}</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -69,3 +69,11 @@
     }
   };
 </script>
+
+<style>
+  .title {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+</style>
