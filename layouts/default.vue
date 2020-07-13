@@ -3,7 +3,6 @@
     <v-navigation-drawer app v-model="drawer">
       <v-card max-width="800">
         <v-toolbar color="dark" dark>
-<!--          <v-app-bar-nav-icon></v-app-bar-nav-icon>-->
           <v-toolbar-title class="title">New Chat</v-toolbar-title>
           <v-spacer></v-spacer>
         </v-toolbar>
@@ -29,7 +28,7 @@
         </v-list>
       </v-card>
     </v-navigation-drawer>
-    <v-app-bar app color="dark" dense=true dark :collapse-on-scroll=true :hide-on-scroll=true>
+    <v-app-bar app color="dark" dark :collapse-on-scroll=true :hide-on-scroll=true>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-btn icon @click="exit" color="dark" dark>
         <v-icon dark>mdi-arrow-left</v-icon>
