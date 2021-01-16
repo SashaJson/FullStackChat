@@ -3,6 +3,7 @@ import Vuetify from "vuetify/lib";
 import colors from 'vuetify/es5/util/colors';
 
 Vue.use(Vuetify, {
+
   theme: {
     primary: colors.blue.darken2,
     accent: colors.grey.darken3,
@@ -12,4 +13,5 @@ Vue.use(Vuetify, {
     error: colors.deepOrange.accent4,
     success: colors.green.accent3
   }
-})
+
+});
